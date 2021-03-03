@@ -1,0 +1,82 @@
+@import url("style.css");
+.main__section {
+  padding: 10px;
+}
+
+.main__section > article > h3 {
+  margin-top: 20px;
+}
+
+section > h2 {
+  margin-left: 50px;
+}
+
+section > article > h3 {
+  margin-left: 30px;
+}
+
+header > a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.main {
+  width: 80%;
+  background-color: #29095b;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 250px auto;
+        grid-template-columns: 250px auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+}
+
+.menu > ul > a > li {
+  border-top: #548505 dashed 4px;
+  border-right: #548505 dashed 4px;
+  border-left: #548505 dashed 4px;
+}
+
+.menu > ul > a:last-child > li {
+  border-bottom: #548505 dashed 4px;
+}
+
+section {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+}
+
+.menu {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+aside {
+  padding: 4px;
+  font-size: smaller;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background-color: #091a62;
+}
+
+aside > article {
+  padding: 5px;
+}
+/*# sourceMappingURL=main.css.map */
