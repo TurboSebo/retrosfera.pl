@@ -1,0 +1,97 @@
+$fontcolor: #89F71B;
+$onecolor: rgb(22, 0, 71);
+$maincolor: rgb(41, 9, 91);
+$bodycolor: rgb(15, 0, 45); 
+
+*{
+    /* background-color: rgb(15, 0, 45); */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;  
+  }
+  
+  
+  body{
+    background-color: $bodycolor; 
+  }
+  
+  .header{
+    background-color: $onecolor;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+  .header__logo{
+    align-self: center;
+  }
+  
+  .container{
+    color: #89F71B;
+    font-size: 25px;
+    font-family: 'VT323', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .header__login{
+    align-self: flex-end; 
+    color: #E0930D; 
+  }
+  .header__login:visited{
+    color: #E0930D; 
+
+  }
+  
+  .main{
+    
+    width: 80%;
+   
+    background-color: $maincolor;
+   
+  }
+  .footer{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 70px;
+    background-color: $onecolor;
+  
+  }
+  .menu__list-element {
+    height: 70px;
+    background-color: rgb(9, 26, 98);
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    
+    padding: 12px;
+    color: $fontcolor;
+    
+  }
+  .menu__list-link, .header__login{
+    text-decoration: none;
+  }
+  
+  .menu__list-element:hover{
+    background-color: #0f002d;
+    color: #064d25;
+  }
+  
+  /*dla telefonów*/
+  @media screen and (max-width: 600px) {
+  
+    .main {
+        width: 100%;
+        margin: 0;
+        
+    }
+  
+    li {
+        
+        width: 100%;
+    }
+  }
+  

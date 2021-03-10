@@ -1,0 +1,93 @@
+$fontcolor: rgb(22, 138, 72);
+$onecolor: rgb(22, 0, 71);
+$maincolor: #29095B;
+$bodycolor: rgb(15, 0, 45); 
+$bordercolor: rgb(84, 133, 5);
+
+.menu{
+    display: flex;
+    width: 80%;
+    border: rgb(84, 133, 5) dashed 4px;
+    background-color: rgb(9, 26, 98);  
+}
+.menu__list{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.main__title{
+    align-self: center;
+    padding: 20px;
+    font-size: 60px;
+}
+.main__consoles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.main__consoles-article{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(22, 138, 72);
+    transition: transform 0.3s ease-in-out;
+}
+a{
+    text-decoration: none;
+    
+}
+.main__consoles-article:hover{
+    color: lime;
+    }
+    @media only screen and (min-width: 768px) {
+    .main__consoles-article:hover {
+transform: scale(1.15);
+    }
+}
+.main__games{
+    width: 100%;
+}
+.main__games-element{
+    display: flex;
+    align-content: center;
+    border-top: $bordercolor dashed 4px;
+    border-right: $bordercolor dashed 4px;
+    border-left: $bordercolor dashed 4px;
+    
+}
+.main__games-link:last-child >.main__games-element {
+border-bottom: rgb(84, 133, 5) dashed 4px;
+
+}
+.main__games-link{
+    color: rgb(84, 133, 5);
+}
+.main__games-link:hover{
+    color: chartreuse;
+}
+.main__games-link:hover > .main__games-element{
+    background-color: navy;
+}
+
+.main__games-text{
+    margin: 20px;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+        .menu{
+            width: 100%;
+        }
+      
+    }
